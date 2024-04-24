@@ -1,4 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+#define MAX_ITEMS 10
+#define MAX_NAME_LENGTH 50
+#define NUM_DEFAULT_ITEMS 10
+
+//Items Available
+char defaultItems[NUM_DEFAULT_ITEMS][MAX_NAME_LENGTH] = {
+    "Milk","Juice","Eggs","Cheese","Toothpaste","Brush","Mobile",
+    "Laptop","Coconut oil","Deodorant"};
+
+float defaultPrices[NUM_DEFAULT_ITEMS] = {
+   49.0,40.0,23.0,25.0,20.0,10.0,20000.0,40000.0,43.0,78.0
+};
+
+//Where user's items are stored
+char cart[MAX_ITEMS][MAX_NAME_LENGTH];
+float cartPrices[MAX_ITEMS];
+int numItems = 0;
+
+// Accept details
+void printUserDetails(char name[], char address[]) {
+    printf("User Details:\n");
+    printf("Name: %s\n", name);
+    printf("Address: %s\n", address); }
+
+void displayDefaultItems() {
+// Sort default items by price
+    for (int i = 0; i < NUM_DEFAULT_ITEMS - 1; i++) {
+        for (int j =i+1; j < NUM_DEFAULT_ITEMS - 1; j++) {
+            if (defaultPrices[j] > defaultPrices[j + 1]) {
+// Swap item names according to respective price
+                char tempName[MAX_NAME_LENGTH];
+                strcpy(tempName, defaultItems[j]);
+                strcpy(defaultItems[j], defaultItems[j + 1]);
+                strcpy(defaultItems[j + 1], tempName);
+
+// Swap item's prices
+                float tempPrice = defaultPrices[j];
+                defaultPrices[j] = defaultPrices[j + 1];
+                defaultPrices[j + 1] = tempPrice;
+            }
+        }
+    }
+
+    printf("Available items (sorted by price):\n");
+    for (int i = 0; i < NUM_DEFAULT_ITEMS; i++) {
+        printf("%d. %s - Rs %.2f\n", i + 1, defaultItems[i], defaultPrices[i]);
+    }
+}
 
 
 
