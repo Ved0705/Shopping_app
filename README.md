@@ -8,7 +8,7 @@ One notable feature is the sorting of available items by price, providing users 
 
 Furthermore, the application ensures robustness by handling invalid inputs and errors gracefully, thereby improving user interaction and overall usability.
 
-Overall, this project serves as a foundational example of a shopping application, demonstrating core concepts such as input handling, array manipulation, and menu-driven interfaces in the C programming language.
+
 
 FEATURES AVAILABLE :
 1) Items Available :
