@@ -39,3 +39,6 @@ This code snippet implements a sorting algorithm to arrange items based on their
 8)Display cart:
 This function, `displayCart()`, is designed to present the contents of a shopping cart to the user. It begins by checking if the cart is empty, in which case it prints a message indicating so and exits the function. If the cart contains items, it iterates through each item in the cart, displaying its index, name, and price formatted to two decimal places. This abstraction outlines the function's purpose and behavior, offering a concise understanding of its functionality.
 
+9) Editing the cart:
+   This function, `removeFromCart`, removes an item from the shopping cart based on the provided index. It first checks if the index is valid, ensuring it falls within the range of items currently in the cart. If the index is valid, it shifts the elements in the `cart` array and `cartPrices` array to the left to fill the gap left by the removed item. Finally, it decrements the `numItems` variable to reflect the removal of the item from the cart.
+
