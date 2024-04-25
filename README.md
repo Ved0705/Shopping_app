@@ -33,3 +33,6 @@ This code snippet facilitates swapping the names of items in an array based on t
 6) Swap item's prices:
 This code snippet implements a sorting algorithm to arrange items based on their prices. It utilizes a temporary variable, `tempPrice`, to temporarily store the price of one item during swapping. The prices are swapped between array elements to ensure the items are arranged in ascending order of price. Finally, the sorted list of items along with their prices is printed to the console, providing users with an overview of available items sorted by price.
 
+7) Search the items :
+   This function, `searchItem`, iterates through the `defaultItems` array to find a match for the given `itemName`. If a match is found, it returns the index of the item in the array. If no match is found, it returns -1. This function essentially searches for an item in the list of default items and returns its index if found, otherwise indicating that the item is not present in the list.
+
