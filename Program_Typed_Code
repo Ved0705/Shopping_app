@@ -72,6 +72,41 @@ void displayCart() {
     }
 }
 
+//Editing cart
+void removeFromCart(int index) {
+    if (index < 0 || index >= numItems) {
+        printf("Invalid index\n");
+        return;
+    }
+
+    for (int i = index; i < numItems - 1; i++) {
+        strcpy(cart[i], cart[i + 1]);
+        cartPrices[i] = cartPrices[i + 1];
+    }
+
+    numItems--;
+}
+
+//Calculating bill
+float calculateTotal() {
+    float total = 0.0;
+    for (int i = 0; i < numItems; i++) {
+        total += cartPrices[i];
+    }
+    return total;
+}
+
+int main() {
+    char name[MAX_NAME_LENGTH], address[MAX_NAME_LENGTH];
+
+    printf("Enter your name: ");
+    scanf("%s", name);
+
+    printf("Enter your address: ");
+    scanf("%s", address);
+
+    printUserDetails(name,address);
+
 
 
     
