@@ -36,3 +36,6 @@ This code snippet implements a sorting algorithm to arrange items based on their
 7) Search the items :
    This function, `searchItem`, iterates through the `defaultItems` array to find a match for the given `itemName`. If a match is found, it returns the index of the item in the array. If no match is found, it returns -1. This function essentially searches for an item in the list of default items and returns its index if found, otherwise indicating that the item is not present in the list.
 
+8)Display cart:
+This function, `displayCart()`, is designed to present the contents of a shopping cart to the user. It begins by checking if the cart is empty, in which case it prints a message indicating so and exits the function. If the cart contains items, it iterates through each item in the cart, displaying its index, name, and price formatted to two decimal places. This abstraction outlines the function's purpose and behavior, offering a concise understanding of its functionality.
+
