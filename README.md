@@ -23,10 +23,9 @@ Together, these variables serve as the foundation for managing a shopping cart i
 
 3) Accepting details:
    This function, `printUserDetails`, prints user details to the console. It takes two parameters: `name`, a character array representing the user's name, and `address`, a character array representing the user's address. The function first prints a header indicating "User Details:", followed by the user's name and address.
+
 4) Sort the items :
    This nested loop iterates through the `defaultPrices` array to perform a bubble sort algorithm. It compares adjacent elements and swaps them if they are in the wrong order, ensuring that the array is sorted in ascending order of prices. This sorting process helps arrange the items in the list based on their prices, facilitating tasks such as displaying items in order of increasing price or finding the cheapest item.
-6) Search Items
-   This function, `searchItem`, iterates through the `defaultItems` array to find a match for the given `itemName`. If a match is found, it returns the index of the item in the array. If no match is found, it returns -1. This function essentially searches for an item in the list of default items and returns its index if found, otherwise indicating that the item is not present in the list.
 
 5)Swap item names according to respective price:
 This code snippet facilitates swapping the names of items in an array based on their respective prices. It employs a temporary variable, `tempName`, to store the name of one item temporarily. The names are swapped by copying them between array elements using `strcpy()`. This process ensures that the item names are rearranged according to their corresponding prices.
