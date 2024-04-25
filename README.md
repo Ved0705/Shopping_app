@@ -21,4 +21,7 @@ This code snippet initializes two arrays, `defaultItems` and `defaultPrices`, re
    3. `numItems` is an integer variable to keep track of the number of items currently in the cart. 
 Together, these variables serve as the foundation for managing a shopping cart in a program or application.
 
-3) Accepting details:This function, `printUserDetails`, prints user details to the console. It takes two parameters: `name`, a character array representing the user's name, and `address`, a character array representing the user's address. The function first prints a header indicating "User Details:", followed by the user's name and address.
+3) Accepting details:
+   This function, `printUserDetails`, prints user details to the console. It takes two parameters: `name`, a character array representing the user's name, and `address`, a character array representing the user's address. The function first prints a header indicating "User Details:", followed by the user's name and address.
+4) Search Items
+   This function, `searchItem`, iterates through the `defaultItems` array to find a match for the given `itemName`. If a match is found, it returns the index of the item in the array. If no match is found, it returns -1. This function essentially searches for an item in the list of default items and returns its index if found, otherwise indicating that the item is not present in the list.
