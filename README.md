@@ -41,4 +41,11 @@ This function, `displayCart()`, is designed to present the contents of a shoppin
 
 9) Editing the cart:
    This function, `removeFromCart`, removes an item from the shopping cart based on the provided index. It first checks if the index is valid, ensuring it falls within the range of items currently in the cart. If the index is valid, it shifts the elements in the `cart` array and `cartPrices` array to the left to fill the gap left by the removed item. Finally, it decrements the `numItems` variable to reflect the removal of the item from the cart.
+10)Calculating bill:
+   This code consists of two main functions: `calculateTotal()` and `main()`. 
 
+1. `calculateTotal()` computes the total cost of items in the shopping cart by iterating through the array of item prices and summing them up. It initializes a variable `total` to store the sum of prices, iterates through the items in the cart, and adds each item's price to the total. Finally, it returns the total cost.
+
+2. In `main()`, the user is prompted to enter their name and address. After receiving the input, it calls the `printUserDetails()` function to print the user's details. This function takes the entered name and address as parameters and prints them to the console.
+
+This abstract provides an overview of the main functionality of the code, focusing on user interaction and calculation of the total cost of items in the shopping cart.
