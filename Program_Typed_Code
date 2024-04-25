@@ -50,7 +50,9 @@ void displayDefaultItems() {
         printf("%d. %s - Rs %.2f\n", i + 1, defaultItems[i], defaultPrices[i]);
     }
 }
-//Search items
+
+//Search for items
+
 int searchItem(char itemName[]) {
     for (int i = 0; i < NUM_DEFAULT_ITEMS; i++) {
         if (strcmp(defaultItems[i], itemName) == 0) {
