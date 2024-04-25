@@ -27,7 +27,7 @@ Together, these variables serve as the foundation for managing a shopping cart i
 4) Sort the items :
    This nested loop iterates through the `defaultPrices` array to perform a bubble sort algorithm. It compares adjacent elements and swaps them if they are in the wrong order, ensuring that the array is sorted in ascending order of prices. This sorting process helps arrange the items in the list based on their prices, facilitating tasks such as displaying items in order of increasing price or finding the cheapest item.
 
-5)Swap item names according to respective price:
+5) Swap item names according to respective price:
 This code snippet facilitates swapping the names of items in an array based on their respective prices. It employs a temporary variable, `tempName`, to store the name of one item temporarily. The names are swapped by copying them between array elements using `strcpy()`. This process ensures that the item names are rearranged according to their corresponding prices.
 
 6) Swap item's prices:
@@ -36,16 +36,29 @@ This code snippet implements a sorting algorithm to arrange items based on their
 7) Search the items :
    This function, `searchItem`, iterates through the `defaultItems` array to find a match for the given `itemName`. If a match is found, it returns the index of the item in the array. If no match is found, it returns -1. This function essentially searches for an item in the list of default items and returns its index if found, otherwise indicating that the item is not present in the list.
 
-8)Display cart:
+8) Display cart:
 This function, `displayCart()`, is designed to present the contents of a shopping cart to the user. It begins by checking if the cart is empty, in which case it prints a message indicating so and exits the function. If the cart contains items, it iterates through each item in the cart, displaying its index, name, and price formatted to two decimal places. This abstraction outlines the function's purpose and behavior, offering a concise understanding of its functionality.
 
 9) Editing the cart:
    This function, `removeFromCart`, removes an item from the shopping cart based on the provided index. It first checks if the index is valid, ensuring it falls within the range of items currently in the cart. If the index is valid, it shifts the elements in the `cart` array and `cartPrices` array to the left to fill the gap left by the removed item. Finally, it decrements the `numItems` variable to reflect the removal of the item from the cart.
-10)Calculating bill:
+10) Calculating bill:
    This code consists of two main functions: `calculateTotal()` and `main()`. 
 
-1. `calculateTotal()` computes the total cost of items in the shopping cart by iterating through the array of item prices and summing them up. It initializes a variable `total` to store the sum of prices, iterates through the items in the cart, and adds each item's price to the total. Finally, it returns the total cost.
+ 1. `calculateTotal()` computes the total cost of items in the shopping cart by iterating through the array of item prices and summing them up. It initializes a variable `total` to store the sum of prices, iterates through the items in the cart, and adds each item's price to the total. Finally, it returns the total cost.
 
-2. In `main()`, the user is prompted to enter their name and address. After receiving the input, it calls the `printUserDetails()` function to print the user's details. This function takes the entered name and address as parameters and prints them to the console.
+ 2. In `main()`, the user is prompted to enter their name and address. After receiving the input, it calls the `printUserDetails()` function to print the user's details. This function takes the entered name and address as parameters and prints them to the console.
 
 This abstract provides an overview of the main functionality of the code, focusing on user interaction and calculation of the total cost of items in the shopping cart.
+
+11) Menu :
+    This code presents a menu to the user, allowing them to interact with a program. The user is prompted to enter a choice, and based on their selection, different actions are performed. Here's a breakdown of the menu options:
+
+1. **Search for item**: Prompts the user to enter an item name to search for in the available items list. If the item is found, it adds it to the shopping cart.
+2. **Display available items**: Shows the list of available items with their respective prices.
+3. **Display cart**: Displays the items currently in the shopping cart along with their prices.
+4. **Sort items by price and display**: Sorts the available items by price and displays them.
+5. **Remove item from cart**: Allows the user to remove an item from the shopping cart.
+6. **Calculate total amount**: Calculates and displays the total amount of items in the shopping cart.
+7. **Exit**: Exits the program.
+
+The menu continues to loop until the user chooses to exit by entering '7'.
