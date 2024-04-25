@@ -30,3 +30,6 @@ Together, these variables serve as the foundation for managing a shopping cart i
 5)Swap item names according to respective price:
 This code snippet facilitates swapping the names of items in an array based on their respective prices. It employs a temporary variable, `tempName`, to store the name of one item temporarily. The names are swapped by copying them between array elements using `strcpy()`. This process ensures that the item names are rearranged according to their corresponding prices.
 
+6) Swap item's prices:
+This code snippet implements a sorting algorithm to arrange items based on their prices. It utilizes a temporary variable, `tempPrice`, to temporarily store the price of one item during swapping. The prices are swapped between array elements to ensure the items are arranged in ascending order of price. Finally, the sorted list of items along with their prices is printed to the console, providing users with an overview of available items sorted by price.
+
